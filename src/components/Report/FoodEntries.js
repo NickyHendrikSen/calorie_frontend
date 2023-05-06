@@ -47,7 +47,7 @@ const FoodEntries = ({ amount, percentage, current }) => {
             ? <TiArrowSortedUp className="gain"/>
             : <TiArrowSortedDown className="loss"/>
           }
-          <span>{percentage === "inf" ? "inf" : Math.abs(percentage).toFixed(2)}%</span>
+          <span>{percentage === "inf" ? "0" : Math.abs(percentage).toFixed(2)}%</span>
         </div>
       </div>
       <div className="current-info">+{current || 0} ( Last 24 Hours )</div>
